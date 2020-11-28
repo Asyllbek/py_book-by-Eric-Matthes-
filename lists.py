@@ -559,4 +559,380 @@
 
 
 # Словари
-alien_0 = {}
+# Простой словарь
+# alien_0 = {'color': 'green', 'points': 65}
+# print(alien_0)
+# print(alien_0['color'])
+# print(alien_0['points'])
+
+# new_points = alien_0['points']
+# print('You just earned ' + str(new_points) + ' points')
+
+# alien_0['x_position'] = 0
+# alien_0['y_position'] = 25
+# alien_0['strength'] = 99
+# print(alien_0)
+# print(alien_0['color'])
+# alien_0['color'] = 'Orange'
+# print(alien_0['color'])
+# alien_0['speed'] = 'quick'
+# print(alien_0)
+# print("Original x-position: " + str(alien_0['x_position']))
+# # Пришелец перемещается вправо.
+# # Вычисляем величину смещения на основании текущей скорости.
+# if alien_0['speed'] == 'slow':
+#     x_increment = 1
+# elif alien_0['speed'] == 'medium':
+#     x_increment = 2
+# else:
+#     x_increment = 3
+#
+# alien_0['x_position'] = alien_0['x_position'] + x_increment
+# print('New x position: ' + str(alien_0['x_position']))
+#
+# # Удаление пар «ключ—значение»
+#
+# print(alien_0['points'])
+# del alien_0['points']
+# print(alien_0)
+
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+# }
+# print("Sarah's favorite language is " + favorite_languages['sarah'].title() + ".")
+
+
+# Человек: используйте словарь для сохранения информации об известном вам чело-
+# веке. Сохраните имя, фамилию, возраст и город, в котором живет этот человек. Словарь
+# должен содержать ключи с такими именами, как first_name, last_name, age и city. Выведите
+# каждый фрагмент информации, хранящийся в словаре.
+
+# men = {
+#     'first_name': 'Christopher Jonathan',
+#     'last_name': 'James Nolan',
+#     'age': 50,
+#     'city': 'London'
+# }
+#
+# print(men['first_name'])
+# print(men['last_name'])
+# print(men['age'])
+# print(men['city'])
+# print(men)
+#
+# # Любимые числа: используйте словарь для хранения любимых чисел. Возьмите пять
+# # имен и используйте их как ключи словаря. Придумайте любимое число для каждого чело-
+# # века и сохраните его как значение в словаре. Выведите имя каждого человека и его люби-
+# # мое число. Чтобы задача стала более интересной, опросите нескольких друзей и соберите
+# # реальные данные для своей программы.
+#
+# favorite_numbers = {
+#     'Asylbek': 11,
+#     'Kudaiar': 21,
+#     'Elchibek': 12,
+#     'Denis': 25,
+#     'Aidarbek': 19
+# }
+# print(favorite_numbers['Asylbek'])
+# print(favorite_numbers['Elchibek'])
+# print(favorite_numbers['Aidarbek'])
+# print(favorite_numbers['Kudaiar'])
+# print(favorite_numbers['Denis'])
+#
+# # Глоссарий: словари Python могут использоваться для моделирования «настоящего»
+# # словаря (чтобы не создавать путаницы, назовем его «глоссарием»).
+# # • Вспомните пять терминов из области программирования, которые вы узнали в пре
+# # дыдущих главах. Используйте эти слова как ключи глоссария, а их определения — как
+# # значения.
+#
+# glossary = {
+#     'rest': 'Rest это архитектурный стиль взаимодействия компонентов распределенного приложения в сети. Rest \n'
+#             'представляет собой согласованный набор ограничений, учитываемых при проектировании распределенной\n'
+#             'гипермедия-системы !.... Это набор правил (6 правил), как программисту организовать написание кода\n'
+#             'серверного веб-приложения, чтобы все системы легко обменивались данными и приложение можно было\n'
+#             'масшатабировать\n',
+#     'put': 'это метод HTTP, Put = full update запрос'
+# }
+# print(glossary['rest'])
+# print(glossary['put'])
+#
+# for key, value in glossary.items():
+#     print('Key: ', key, '\nvalue: ', value)
+#
+# # Перебор всех ключей в словаре
+#
+# for name in glossary.keys():
+#     print(name.title())
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+#     'Asylbek': 'python',
+# }
+# sorted() сортирует по алфавиту
+# for name in sorted(favorite_languages.keys()):
+#     print(name.title() + ", thank you for taking the poll.")
+
+# print("The following languages have been mentioned:")
+# for language in favorite_languages.values():
+#     print(language.title())
+
+# Set для словаря (выводит только уникальные значения
+# for language in sorted(set(favorite_languages.values())):
+#     print(language.title())
+
+# glossary = {
+#     'rest': 'Rest это архитектурный стиль взаимодействия компонентов распределенного приложения в сети. Rest \n'
+#             'представляет собой согласованный набор ограничений, учитываемых при проектировании распределенной\n'
+#             'гипермедия-системы !.... Это набор правил (6 правил), как программисту организовать написание кода\n'
+#             'серверного веб-приложения, чтобы все системы легко обменивались данными и приложение можно было\n'
+#             'масшатабировать\n',
+#     'put': 'это метод HTTP, Put = full update запрос'
+# }
+#
+# # Перебор всех пар «ключ—значение» ---- items()
+# for obj in glossary.items():
+#     print(obj)
+
+# user_0 = {
+# 'username': 'efermi',
+# 'first': 'enrico',
+# 'last': 'fermi',
+# }
+
+# user_0 = {
+#     'username': 'efermi',
+#     'first': 'enrico',
+#     'last': 'fermi',
+# }
+#
+# for key, value in user_0.items():
+#     print('\nKey: ' + key)
+#     print('Value: ' + value)
+
+# перебор ключей словаря
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+# }
+
+# for name in favorite_languages.keys():
+#     print(name.title())
+#
+# print("--------------------------------------")
+# for name in favorite_languages:
+#     print(name.title())
+#
+# friends = ['phil', 'sarah']
+# for name in favorite_languages.keys():
+#     print(name.title())
+#     if name in friends:
+#         print(" Hi " + name.title() +
+#               ", I see your favorite language is " +
+#               favorite_languages[name].title() + "!")
+# friends = ['phil', 'sarah']
+# for name in favorite_languages.keys():
+#     print(name.title())
+#     if name in friends:
+#         print("Hello " + name.title() + "\nYour favorite language is: " + favorite_languages[name].title() + '!')
+
+# for name in favorite_languages:
+#     print(favorite_languages[name])
+
+# Упорядоченный перебор ключей словаря
+
+# favorite_languages = {
+#     'asylbek': 'python',
+#     'elchibek': 'php',
+#     'erba': 'java',
+#     'johny': 'ruby',
+#     'den' : 'python',
+# }
+# #
+# # for name in sorted(favorite_languages.keys()):
+# #     print(name.title() + ', thank you for taking the poll.')
+# #
+# # print("The following languages have been mentioned:")
+# # for language in favorite_languages.values():
+# #     print(language.title())
+#
+# print("The following languages have been mentioned:")
+# for language in set(favorite_languages.values()):
+#     print(language.title())
+#
+# 6-4. Глоссарий 2: теперь, когда вы знаете, как перебрать элементы словаря, упростите код
+# из упражнения 6-3, заменив серию команд print циклом, перебирающим ключи и значения
+# словаря. Когда вы будете уверены в том, что цикл работает, добавьте в глоссарий еще пять
+# терминов Python. При повторном запуске программы новые слова и значения должны быть
+# автоматически включены в вывод.
+
+# glossary = {
+#     'rest': 'Rest это архитектурный стиль взаимодействия компонентов распределенного приложения в сети. Rest \n'
+#             'представляет собой согласованный набор ограничений, учитываемых при проектировании распределенной\n'
+#             'гипермедия-системы !.... Это набор правил (6 правил), как программисту организовать написание кода\n'
+#             'серверного веб-приложения, чтобы все системы легко обменивались данными и приложение можно было\n'
+#             'масшатабировать\n',
+#     'put': 'это метод HTTP, Put = full update запрос',
+#     'Метод запроса POST': 'Метод запроса POST предназначен для запроса, при котором веб-сервер принимает данные, '
+#                           'заключённые в тело сообщения, для хранения. Он часто используется для загрузки файла или '
+#                           'представления заполненной веб-формы. \n ',
+#     'Метод запроса Get': 'метод HTTP GET предназначен для получения информации от сервера. \n',
+#     'POST': 'post — создание, то есть POST используется для создания подчиненной сущности, post -создать новую запись, '
+#             'POST в случае успеха всегда должен возвращать статус 201 (Created) и Location на новый ресурс.\n',
+#     'PUT': 'PUT — обновление, Put это обновить существующую запись, PUT для сохранения сущности, PUT же может '
+#            'возвращать как 201 (если ресурс не найден), так и 204 (No Content) — если ресурс обновлялся\n',
+#
+# }
+#
+# for key, value in glossary.items():
+#     print("Key: " + key, "\n Value: " + value)
+
+
+# 6-5. Реки: создайте словарь с тремя большими реками и странами, по которым протекает
+# каждая река. Одна из возможных пар «ключ—значение» — ‘nile’: ‘egypt’.
+
+# rivers = {
+#     'Янцзы': 'Китай',
+#     'Нил': 'Египет',
+#     'Конго': 'Демократическая Республика Конго',
+#     'Лена': 'Россия',
+# }
+
+# • Используйте цикл для вывода сообщения с упоминанием реки и страны — например,   # semy colon
+# «The Nile runs through Egypt.»
+# for key, value in rivers.items():
+#     print(key + ' проходит через ' + value)
+#
+# # • Используйте цикл для вывода названия каждой реки, включенной в словарь.
+# for name in rivers.keys():
+#     print(name)
+# # • Используйте цикл для вывода названия каждой страны, включенной в словарь.
+# for name_country in rivers.values():
+#     print(name_country)
+
+
+# # Опрос: Возьмите за основу код favorite_languages.py (с. 106).
+# # • Создайте список людей, которые должны участвовать в опросе по поводу любимо-
+# # го языка программирования. Включите некоторые имена, которые уже присутствуют
+# # в списке, и некоторые имена, которых в списке еще нет.
+# # • Переберите список людей, которые должны участвовать в опросе. Если они уже прош-
+# # ли опрос, выведите сообщение с благодарностью за участие. Если они еще не про-
+# # ходили опрос, выведите сообщение с предложением принять участие.
+
+# favorite_languages = {
+#     'asylbek': 'python',
+#     'elchibek': 'php',
+#     'erba': 'java',
+#     'johny': 'ruby',
+#     'den': 'python',
+#     'chris': 'Js',
+#     'Quentin': 'C#',
+#
+# }
+#
+# polled = ['asylbek', 'elchibek', 'erba', 'johny', 'den']
+# for name in favorite_languages.keys():
+#     if name in polled:
+#         print("Thank you! " + name.title() + ", *")
+#     else:
+#         print('Hi ' + name.title() + ' you can participate !')
+
+
+# Вложение
+# Иногда нужно сохранить множество словарей в списке или сохранить спи-
+# сок как значение элемента словаря. Создание сложных структур такого рода
+# н азывается вложением. Вы можете вложить множество словарей в список,
+# список элементов в словарь или даже словарь внутрь другого словаря. Как
+# наглядно показывают следующие примеры, вложение — чрезвычайно мощный
+# механизм.
+# Corey Shafer
+#  Semy colon
+#
+
+# alien_0 = {'color': 'green', 'points': 5}
+# alien_1 = {'color': 'yellow', 'points': 10}
+# alien_2 = {'color': 'red', 'points': 15}
+#
+# aliens = [alien_0, alien_1, alien_2]
+# for alien in aliens:
+#     print(alien)
+
+
+# Создание пустого списка для хранения пришельцев.
+# aliens = []
+# # Создание 30 зеленых пришельцев.
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+# # Вывод первых 5 пришельцев:
+# for alien in aliens[:5]:
+#     print(alien)
+#
+# print("...")
+# # Вывод количества созданных пришельцев.
+# print("Total number of aliens: " + str(len(aliens)))
+
+# # Создание пустого списка для хранения пришельцев.
+# aliens = []
+# # Создание 30 зеленых пришельцев.
+# for alien_number in range(0, 30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+#     for alien in aliens[0:3]:
+#         if alien['color'] == 'green':
+#             alien['color'] = 'yellow'
+#             alien['speed'] = 'medium'
+#             alien['points'] = 10
+# # Вывод первых 5 пришельцев:
+# for alien in aliens[0:5]:
+#     print(alien)
+# print("...")
+
+# aliens = []
+# for alien_number in range(0, 30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+#     for alien in aliens[0:3]:
+#         if alien['color'] == 'green':
+#             alien['color'] = 'yellow'
+#             alien['speed'] = 'medium'
+#             alien['points'] = 10
+#         elif alien['color'] == 'yellow':
+#             alien['color'] = 'red'
+#         alien['speed'] = 'fast'
+#         alien['points'] = 15
+#
+# for alien in aliens[0:5]:
+#     print(alien)
+# print("....")
+
+# # Сохранение информации о заказанной пицце.
+# pizza = {
+# 'crust': 'thick',
+# 'toppings': ['mushrooms', 'extra cheese'],
+# }
+# # # Описание заказа.
+# print("You ordered a " + pizza['crust'] + "-crust pizza " + "with the following toppings:")
+# for topping in pizza['toppings']:
+#     print("\t" + topping)
+
+# pizza = {
+#     'crust': 'thick',
+#     'toppings': ['mushrooms', 'extra cheese'],
+# }
+print("Hello Men 1")
+int_1 = input("enter number: ")
+print(int_1)
+int_2 = int(input("enter number: "))
+print(int_2)
+str_1 = str(input("Enter word: "))
+print(str_1)
+
